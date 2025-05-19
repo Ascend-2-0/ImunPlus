@@ -1,13 +1,12 @@
-import { useState } from 'react'
-import './App.css'
+import Navbar from './components/Navbar'
+import RegistrationPage from './pages/RegistrationPage'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <h1>Vite + React + Tailwind CSS</h1>
-    </>
+    <div className="flex flex-col min-h-screen bg-dark-blue">
+      <Navbar />
+      <RegistrationPage />
+    </div>
   )
 }
 

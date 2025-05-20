@@ -6,14 +6,14 @@ const Navbar = () => {
   return (
     <header className="bg-light-pink py-4 px-6 md:px-12 shadow-md">
       <div className="max-w-7xl mx-auto flex justify-between items-center">
-        <div className="font-bold text-xl md:text-2xl text-dark-blue">
+        <div className="font-fira font-bold text-xl md:text-2xl text-dark-blue">
           Logo
         </div>
         
         <nav className="flex items-center space-x-6">
-          <a href="#" className="nav-link hidden md:block">Home</a>
+          <a href="/" className="nav-link hidden md:block">Home</a>
           <a href="#" className="nav-link hidden md:block">Tentang</a>
-          <a href="#" className="nav-link">Masuk</a>
+          <a href="/register" className="nav-link">Masuk</a>
           
           <div className="flex items-center space-x-2 ml-2">
             <button 

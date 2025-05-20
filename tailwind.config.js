@@ -12,6 +12,9 @@ export default {
         'dark-pink': '#E5B5B9',
         'button-pink': '#E37282',
       },
+      fontFamily: {
+        'fira': ['Fira Sans', 'sans-serif'],
+      },
       animation: {
         'pulse-light': 'pulse 3s infinite',
       },

@@ -1,5 +1,6 @@
 import Navbar from './components/Navbar'
 import RegistrationPage from './pages/RegistrationPage'
+import RegisterPage from './pages/RegisterPage'
 
 function App() {
   return (

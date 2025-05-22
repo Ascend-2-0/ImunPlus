@@ -1,19 +1,72 @@
-import { useState } from 'react'
+import React from 'react';
+import image1 from '../assets/image1.png';
+import Footer from '../components/Footer';
 
-function HomePage() {
-    const [activeLang, setActiveLang] = useState('id')
-    
-    return (
-        <main className="flex-1 flex flex-col items-center justify-center px-4 py-10">
-        <h1 className="text-3xl md:text-4xl font-bold text-black mb-8">SELAMAT DATANG</h1>
+const Homepage = () => {
+  return (
+    <div className="">
+      <section className="relative bg-gradient-to-b from-slate-700 to-slate-800 h-auto flex items-center">
+        <div className="absolute inset-0 bg-slate-800 bg-opacity-60"></div>
         
-        <div className="w-full max-w-md bg-gray-800/20 rounded-lg shadow-xl p-2 backdrop-blur-sm">
-            <div className="bg-light-pink rounded-lg p-6 md:p-8">
-            <p>Welcome to the Home Page!</p>
-            </div>
+        <div className="absolute inset-0">
+          <img 
+            src={image1}
+            alt="Medical professionals" 
+            className="object-top w-full h-full object-cover opacity-40"
+          />
         </div>
-        </main>
-    )
-    }
+        
+        <div className="relative z-10 container mx-auto py-40 px-4 text-center">
+          <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 tracking-wide">
+            SELAMAT DATANG DI
+          </h1>
+          <h2 className="text-5xl md:text-7xl font-bold text-white mb-8 tracking-wider">
+            IMUN+
+          </h2>
+          
+          <p className="text-lg md:text-xl text-gray-200 mb-4 max-w-2xl mx-auto">
+            Imunisasi cepat dan tepat di daerah 3T
+          </p>
+          <p className="text-base md:text-lg text-gray-300 mb-12">
+            (Tertinggal, Terdepan, Terluar)
+          </p>
+          
+        </div>
+      </section>
+      
+      <section className="pt-32 mb-64">
+        <div className="container mx-auto px-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
+            
+            <div className="group">
+              <button className="w-full bg-red-400 hover:bg-red-500 text-white font-semibold py-4 px-6 rounded-lg shadow-lg transition-all duration-300 transform hover:scale-105 hover:shadow-xl">
+                <span className="text-lg">Imunisasi</span>
+              </button>
+            </div>
+            
+            <div className="group">
+              <button className="w-full bg-red-400 hover:bg-red-500 text-white font-semibold py-4 px-6 rounded-lg shadow-lg transition-all duration-300 transform hover:scale-105 hover:shadow-xl">
+                <span className="text-lg">Reservasi</span>
+              </button>
+            </div>
+            
+            <div className="group">
+              <button className="w-full bg-red-400 hover:bg-red-500 text-white font-semibold py-4 px-6 rounded-lg shadow-lg transition-all duration-300 transform hover:scale-105 hover:shadow-xl">
+                <span className="text-lg">Kartu Imunisasi</span>
+              </button>
+            </div>
+            
+            <div className="group">
+              <button className="w-full bg-red-400 hover:bg-red-500 text-white font-semibold py-4 px-6 rounded-lg shadow-lg transition-all duration-300 transform hover:scale-105 hover:shadow-xl">
+                <span className="text-lg">Video Edukasi</span>
+              </button>
+            </div>
+            
+          </div>
+        </div>
+      </section>
+    </div>
+  );
+};
 
-export default HomePage
+export default Homepage;

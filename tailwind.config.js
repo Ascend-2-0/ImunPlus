@@ -13,7 +13,8 @@ export default {
         'button-pink': '#E37282',
       },
       fontFamily: {
-        'fira': ['Fira Sans', 'sans-serif'],
+        'sans': ['Poppins', 'sans-serif'], // This makes Poppins the default font
+        'poppins': ['Poppins', 'sans-serif'], // This allows you to use font-poppins class
       },
       animation: {
         'pulse-light': 'pulse 3s infinite',

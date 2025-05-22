@@ -4,7 +4,7 @@ import Footer from '../components/Footer';
 
 const Homepage = () => {
   return (
-    <div className="">
+    <div>
       <section className="relative bg-gradient-to-b from-slate-700 to-slate-800 h-auto flex items-center">
         <div className="absolute inset-0 bg-slate-800 bg-opacity-60"></div>
         
@@ -34,34 +34,41 @@ const Homepage = () => {
         </div>
       </section>
       
-      <section className="pt-32 mb-64">
+      <section className="my-1 pt-36 mb-60">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
             
+            <a href="/imunisasi">
             <div className="group">
               <button className="w-full bg-red-400 hover:bg-red-500 text-white font-semibold py-4 px-6 rounded-lg shadow-lg transition-all duration-300 transform hover:scale-105 hover:shadow-xl">
                 <span className="text-lg">Imunisasi</span>
               </button>
             </div>
+            </a>
             
+            <a href="/reservasi">
             <div className="group">
               <button className="w-full bg-red-400 hover:bg-red-500 text-white font-semibold py-4 px-6 rounded-lg shadow-lg transition-all duration-300 transform hover:scale-105 hover:shadow-xl">
                 <span className="text-lg">Reservasi</span>
               </button>
             </div>
+            </a>
             
             <div className="group">
-              <button className="w-full bg-red-400 hover:bg-red-500 text-white font-semibold py-4 px-6 rounded-lg shadow-lg transition-all duration-300 transform hover:scale-105 hover:shadow-xl">
-                <span className="text-lg">Kartu Imunisasi</span>
-              </button>
+                <a href="/kartu-imunisasi">
+                    <button className="w-full bg-red-400 hover:bg-red-500 text-white font-semibold py-4 px-6 rounded-lg shadow-lg transition-all duration-300 transform hover:scale-105 hover:shadow-xl">
+                        <span className="text-lg">Kartu Imunisasi</span>
+                    </button>
+                </a>
             </div>
             
             <div className="group">
-              <button className="w-full bg-red-400 hover:bg-red-500 text-white font-semibold py-4 px-6 rounded-lg shadow-lg transition-all duration-300 transform hover:scale-105 hover:shadow-xl">
-                <span className="text-lg">Video Edukasi</span>
-              </button>
+                <a href="/login">
+                    <button className="w-full bg-red-400 hover:bg-red-500 text-white font-semibold py-4 px-6 rounded-lg shadow-lg transition-all duration-300 transform hover:scale-105 hover:shadow-xl">
+                        <span className="text-lg">Video Edukasi</span>
+                    </button>
+                </a>
             </div>
-            
           </div>
         </div>
       </section>

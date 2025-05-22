@@ -41,12 +41,14 @@ const RegistrationForm = () => {
     // Validate password
     if (!formData.password) {
       newErrors.password = 'Password harus diisi'
-    } else if (!/^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{5,}$/.test(formData.password)) {
-      newErrors.password = 'Password minimal 5 huruf, 1 karakter, dan 1 angka'
+    } else if (!/^(?=.*[A-Za-z])(?=.*\d).{5,}$/.test(formData.password)) {
+      newErrors.password = 'Password minimal 5 huruf dan harus mengandung huruf dan angka'
     }
     
     // Validate confirm password
-    if (formData.password !== formData.confirmPassword) {
+    if (!formData.confirmPassword) {
+      newErrors.confirmPassword = 'Konfirmasi password harus diisi'
+    } else if (formData.password !== formData.confirmPassword) {
       newErrors.confirmPassword = 'Password tidak cocok'
     }
     

@@ -5,13 +5,13 @@ const Navbar = () => {
   const [activeLang, setActiveLang] = useState('id')
 
   return (
-    <header className="bg-light-pink my-10 py-8 px-36 md:px-100 shadow-md">
+    <header className="bg-light-pink my-10 py-5 px-36 md:px-100 shadow-md">
       <div className="max-w-8xl mx-auto flex justify-between items-center">
         <img src={logo} alt="Logo" className="h-16" />
         
         <nav className="flex items-center space-x-9">
           <a href="/" className="text-2xl nav-link hidden md:block">Home</a>
-          <a href="#" className="text-2xl nav-link hidden md:block">Tentang</a>
+          <a href="/about" className="text-2xl nav-link hidden md:block">Tentang</a>
           <a href="/login" className="text-2xl nav-link">Masuk</a>
 
           <div className="flex items-center space-x-5 ml-2">

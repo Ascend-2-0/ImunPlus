@@ -1,5 +1,5 @@
 import React from 'react';
-import image1 from '../assets/image1.png';
+import image1 from '../assets/image1.jpeg';
 import Footer from '../components/Footer';
 
 const Homepage = () => {
@@ -12,7 +12,7 @@ const Homepage = () => {
           <img 
             src={image1}
             alt="Medical professionals" 
-            className="object-top w-full h-full object-cover opacity-40"
+            className="w-full h-full object-cover opacity-40"
           />
         </div>
         
@@ -63,9 +63,9 @@ const Homepage = () => {
             </div>
             
             <div className="group">
-                <a href="/login">
+                <a href="/edukasi">
                     <button className="w-full bg-red-400 hover:bg-red-500 text-white font-semibold py-4 px-6 rounded-lg shadow-lg transition-all duration-300 transform hover:scale-105 hover:shadow-xl">
-                        <span className="text-lg">Video Edukasi</span>
+                        <span className="text-lg">Edukasi</span>
                     </button>
                 </a>
             </div>

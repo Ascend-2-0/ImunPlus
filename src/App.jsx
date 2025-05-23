@@ -8,6 +8,7 @@ import AboutPage from './pages/AboutPage'
 import KartuImunisasiPage from './pages/KartuImunisasiPage'
 import ImunisasiPage from './pages/ImunisasiPage'
 import ReservasiPage from './pages/ReservasiImunisasiPage'
+import EdukasiPage from './pages/EdukasiPage'
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
           <Route path="/kartu-imunisasi" element={<KartuImunisasiPage />} />
           <Route path="/imunisasi" element={<ImunisasiPage />} />
           <Route path="/reservasi" element={<ReservasiPage />} />
+          <Route path="/edukasi" element={<EdukasiPage />} />
           {/* Add more routes as needed */}
         </Routes>
         <Footer />

@@ -1,5 +1,4 @@
 import React from "react";
-import image4 from "../assets/image4.png";
 import VaccineCard from "../components/VaccineCard";
 import VaccineTypes from "../components/VaccineTypes";
 
@@ -9,7 +8,7 @@ const ImunisasiPage = () => {
             <div className="relative bg-[#ffe5e5] py-4">
                 <div className="absolute inset-0 z-0">
                     <img
-                        src={image4}
+                        src="https://ehealth.co.id/blog/assets/static/pemeriksaan-ibu-hamil-dan-bayi-apa-saja-yang-dilakukan-bidan.872e63c.0e9bd9f6997fabcc71867a0c21c48cbc.png"
                         alt="Background"
                         className="w-full h-full object-cover opacity-60"
                     />
@@ -21,9 +20,11 @@ const ImunisasiPage = () => {
                         <p className="text-lg md:text-xl text-[#2b4162] mb-8">Membawa perlindungan hingga pelosok Tanah Air</p>
 
                         <div className="flex flex-col sm:flex-row justify-center gap-4">
+                            <a href="/reservasi">
                             <button className="bg-[#5dd9d5] text-[#2b4162] px-8 py-3 rounded-md font-medium hover:bg-[#4cc7c3] transition-colors">
                                 Reservasi
                             </button>
+                            </a>
                             <button className="bg-white text-[#2b4162] px-8 py-3 rounded-md font-medium hover:bg-gray-100 transition-colors">
                                 Jadwal Imunisasi
                             </button>

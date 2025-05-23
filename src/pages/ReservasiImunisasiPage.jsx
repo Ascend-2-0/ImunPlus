@@ -330,8 +330,8 @@ const ReservasiImunisasiPage = () => {
       {/* Content */}
       <div className="container mx-auto px-4 pb-12">
         {currentStep === 1 && renderStep1()}
-        {currentStep === 2 && renderStep2()}
-        {currentStep === 3 && renderStep3()}
+        {currentStep === 2 && renderStep3()}
+        {currentStep === 3 && renderStep2()}
       </div>
     </div>
   );
